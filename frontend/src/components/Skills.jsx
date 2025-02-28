@@ -10,7 +10,7 @@ const Skills = () => {
         return(
             <div className="progress-bar" key={index}>
                 <div className="progress-circle">
-                    <CircularProgressbar strokeWidth={7.5} text={`${percentage}`} value={percentage}/>
+                    <CircularProgressbar strokeWidth={1.5} text={`${percentage}%`} value={percentage}/>
                 </div>
 
                 <h3 className="skills-tittle">{title}</h3>

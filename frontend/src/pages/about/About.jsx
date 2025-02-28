@@ -20,10 +20,10 @@ const About = () => {
         </ul>
         <a href={CV} download='' className="button">Download CV <span className="button-icon"><FaDownload/></span></a>
       </div>
-
+{/* 
       <div className="stats-grid">
         <Stats/>
-      </div>
+      </div> */}
     </div>
   </section>
 

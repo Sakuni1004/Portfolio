@@ -61,87 +61,79 @@ export const personalInfo = [
   {
     id: 1,
     title: 'First Name : ',
-    description: 'Steve',
+    description: 'Sakunika',
   },
 
   {
     id: 2,
     title: 'Last Name : ',
-    description: 'Milner',
+    description: 'Karunathilaka',
   },
 
   {
     id: 3,
     title: 'Age : ',
-    description: '27 Years',
+    description: '25 Years',
   },
 
   {
     id: 4,
     title: 'Nationality : ',
-    description: 'Tunisian',
+    description: 'Sri Lankan',
   },
 
   {
     id: 5,
-    title: 'Freelance : ',
+    title: 'Undegraduate : ',
     description: 'Available',
   },
 
   {
     id: 6,
     title: 'Address : ',
-    description: 'Tunis',
+    description: 'Colombo, Sri lanka',
   },
 
   {
     id: 7,
     title: 'Phone : ',
-    description: '+21621184010',
+    description: '+94702300931',
   },
 
   {
     id: 8,
     title: 'Email : ',
-    description: 'you@mail.com',
+    description: 'sakunikakarunathilaka99@gmail.com',
   },
+
+
 
   {
     id: 9,
-    title: 'Skype : ',
-    description: 'steve.milner',
-  },
-
-  {
-    id: 10,
     title: 'Langages : ',
-    description: 'French, English',
+    description: 'Sinhala, English',
   },
 ];
 
 export const stats = [
   {
     id: 1,
-    no: '12+',
+    no: '1+',
     title: 'Years of <br /> Experience',
   },
 
   {
     id: 2,
-    no: '97+',
+    no: '3+',
     title: 'Completed <br /> Projects',
   },
 
-  {
-    id: 3,
-    no: '81+',
-    title: 'Happy <br /> Customers',
-  },
+
 
   {
-    id: 4,
-    no: '53+',
-    title: ' Awards <br /> Won',
+    id: 3,
+    no: '4+',
+    title: ' Participate <br /> hackathons',
   },
 ];
 
@@ -205,49 +197,35 @@ export const skills = [
   {
     id: 1,
     title: 'Html',
-    percentage: '25',
+    percentage: '90',
   },
 
   {
     id: 2,
     title: 'Javascript',
-    percentage: '89',
+    percentage: '90',
   },
 
   {
     id: 3,
     title: 'Css',
-    percentage: '70',
+    percentage: '80',
   },
 
   {
     id: 4,
     title: 'Php',
-    percentage: '66',
-  },
-
-  {
-    id: 5,
-    title: 'Wordpress',
-    percentage: '95',
-  },
-
-  {
-    id: 6,
-    title: 'Jquery',
     percentage: '50',
   },
 
-  {
-    id: 7,
-    title: 'Angular',
-    percentage: '65',
-  },
+
+
+
 
   {
-    id: 8,
+    id: 5,
     title: 'React',
-    percentage: '45',
+    percentage: '80',
   },
 ];
 

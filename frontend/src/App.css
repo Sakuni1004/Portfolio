@@ -29,10 +29,10 @@
 
 
     --weight-400: 400;
-    --weight-400: 500;
-    --weight-400: 600;
-    --weight-400: 700;
-    --weight-400: 800;
+    --weight-500: 500;
+    --weight-600: 600;
+    --weight-700: 700;
+    --weight-800: 800;
 
 
    *{
@@ -85,11 +85,13 @@
     max-width: 100%;
    }
 
+
    .section-container{
    
     max-width: 1140px;
     margin-inline: auto;
     padding-top: 50px;
+    padding-inline: 15px;
    }
 
    .grid{
@@ -104,7 +106,7 @@
 
    .section-tittle{
     font-size: var(--big-font-size);
-    font-weight: var(--weight-800);
+ font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
     margin-bottom: 70px;
    }
@@ -116,7 +118,7 @@
 
    .button{
     display:inline-block;
-    color: var(--tittle-color);
+    color:black;
     border: 1px solid var(--first-color);
     padding: 15px 70px 15px 35px;
     border-radius: 35px;
@@ -126,6 +128,7 @@
     position: relative;
     overflow: hidden;
     background-color: var(--first-color);
+    margin-bottom: 20px;
    }
 
    .button:hover{
@@ -155,7 +158,7 @@
     right: 0;
     width: 55px;
     border-radius: 50%;
-    color:#5b5959;
+    color:#0a0a0a;
     font-size: var(--large-font-size);
     text-align: center;
     line-height: 60px;
