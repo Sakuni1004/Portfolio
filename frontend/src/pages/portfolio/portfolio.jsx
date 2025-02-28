@@ -6,7 +6,7 @@ import './Portfolio.css';
 const Portfolio = () => {
   return (
  <section className="portfolio-section">
-  <h2 className="section-tittle">My <span>Portfolio</span></h2>
+  <h2 className="section1-tittle">My <span>Portfolio</span></h2>
   <div className="portfolio-container-grid">
     {portfolio.map((item)=>{
       return <PortfolioItem key={item.id} {...item}/>

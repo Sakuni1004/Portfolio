@@ -1,15 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 .about-container-grid{
    
     display: flex;
     justify-content: center;
+    
    
    
 }
 
-.stats-grid{
-    
+.section3-container{
+   
+    padding: 80px 10%;
+}
+
+.section2-tittle{
+    text-align: center;
+    font-size: 65px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 30px;
  
 }
+
+.section2-tittle span {
+    color: hsl(271, 76%, 53%)
+}
+
+
 
 .list-info-grid{
     row-gap: 20px;
@@ -28,23 +46,19 @@
 
 }
 
-.list-info-grid .info-tittle,
-.list-info-grid .info-description{
-   
-   
-}
+
 
 .info-tittle{
 
     font-size: 16px;
     font-weight:400;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family:'Poppins', sans-serif;
 }
 
 .info-description{
     font-size: 14px;
     font-weight:300;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Poppins', sans-serif;
     color: rgb(57, 57, 57);
 }
 
@@ -67,7 +81,7 @@
     font-size: var(--h1-font-size);
     line-height: 1.2;
     align-items: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Poppins', sans-serif;
     padding-top: 35px;
     text-align: center;
 
@@ -82,7 +96,7 @@
   
     padding-top: 20px;
     text-align: center;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Poppins', sans-serif;
 }
 
 
@@ -154,11 +168,11 @@
 .skills-tittle{
     display: flex;
     justify-content: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     color: rgb(57, 57, 57);
     margin-top: 24px;
-    font-weight:300;
+      font-weight:300;
    
 
 }

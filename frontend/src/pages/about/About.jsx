@@ -8,9 +8,9 @@ import './about.css';
 
 const About = () => {
   return (
- <main className='section-container'>
+ <main className='section3-container'>
   <section className="about">
-    <h2 className="section-tittle">About <span>Me</span> </h2>
+    <h2 className="section2-tittle">About <span>Me</span> </h2>
 
     <div className="about-container-grid">
       <div className="about-info">

@@ -1,21 +1,228 @@
-.portfolio-container-grid{
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #0056b3;
+    --text-color: #333;
+    --bg-color: #f9f9f9;
+    --modal-bg: rgba(0, 0, 0, 0.7);
+    --border-radius: 10px;
+    --shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Portfolio Section */
+.portfolio-section {
+    padding: 60px 10%;
+    background: var(--bg-color);
+    text-align: center;
+}
+
+.section-tittle {
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 40px;
+}
+
+.section-tittle span {
+    color: var(--primary-color);
+}
+
+/* Portfolio Grid */
+.portfolio-container-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    /* background-color: aqua; */
-    margin-left: 10%;
-    margin-right: 10%;
-    gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Portfolio Item */
+  .portfolio-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .portfolio-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .portfolio-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+  }
+  
+  /* Modal Overlay */
+  .portfolio-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.9);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Show Modal */
+  .portfolio-modal.active {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  }
+  
+  /* Modal Content */
+  .portfolio-modal-content {
+    background: #fff;
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+  }
+  
+  .modal-title {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  
+  .modal-list-grid {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .modal-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .item-icon {
+    font-size: 24px;
+    color: #007bff;
+  }
+  
+  .item-title {
+    font-weight: bold;
+  }
+  
+  .modal-img {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 8px;
+  }
+  
+  /* Close Button */
+  .modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .modal-close:hover {
+    transform: rotate(90deg);
+  }
+
+/* Modal Title */
+.modal-tittle {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 15px;
 }
 
-.portfolio-tittle{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: rgb(49, 47, 47);
-    font-size: 20px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* Modal List */
+.modal-list-grid {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 0;
+    text-align: left;
+}
+
+/* Modal Item */
+.modal-item {
+    display: flex;
+    align-items: center;
+    background: var(--bg-color);
+    padding: 12px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    transition: transform 0.2s ease;
+}
+
+.modal-item:hover {
+    transform: scale(1.02);
+}
+
+/* Item Icon */
+.item-icon {
+    font-size: 22px;
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
+/* Item Details */
+.item-tittle {
+    font-size: 16px;
     font-weight: 500;
+    color: var(--text-color);
 }
 
-.section-tittle{
-    padding-top: 100px;
+.item-details {
+    display: block;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Modal Image */
+.modal-img {
+    width: 100%;
+    border-radius: var(--border-radius);
+    margin-top: 20px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .portfolio-container-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .portfolio-modal-content {
+        width: 90%;
+    }
 }
