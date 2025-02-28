@@ -109,6 +109,11 @@
     margin-bottom: 70px;
    }
 
+   .section-tittle span{
+    color: var(--first-color);
+
+   }
+
    .button{
     display:inline-block;
     color: var(--tittle-color);

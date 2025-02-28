@@ -7,7 +7,7 @@ const Info = () => {
     {personalInfo.map(({tittle, description, }, index)=>{
       return(
         <li className="info-item" key={index}>
-          <span className="info-titt">{tittle}</span>
+          <span className="info-tittle">{tittle}</span>
           <span className="info-description">{description}</span>
 
         </li>
