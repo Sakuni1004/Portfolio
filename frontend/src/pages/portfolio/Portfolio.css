@@ -1,0 +1,21 @@
+.portfolio-container-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* background-color: aqua; */
+    margin-left: 10%;
+    margin-right: 10%;
+    gap: 50px;
+}
+
+.portfolio-tittle{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgb(49, 47, 47);
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+.section-tittle{
+    padding-top: 100px;
+}
