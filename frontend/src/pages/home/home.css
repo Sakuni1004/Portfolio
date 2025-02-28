@@ -58,3 +58,36 @@
     left: -83%;
     transform: rotate(-15deg);
 }
+
+@media (max-width: 768px) {
+    .home {
+        grid-template-columns: 1fr; /* Change to a single column */
+        text-align: center; /* Center content */
+        padding: 20px;
+        height: auto; /* Adjust height */
+    }
+
+    .home-img {
+        width: 80%; /* Reduce image size for small screens */
+        max-width: 300px;
+        margin: 0 auto; /* Center image */
+    }
+
+    .home-tittle {
+        font-size: var(--h2-font-size);
+        padding-left: 0;
+    }
+
+    .home-tittle::before {
+        display: none; /* Hide line decoration on small screens */
+    }
+
+    .home-data {
+        padding-top: 10px;
+        max-width: 90%;
+    }
+
+    .color-block {
+        display: none; /* Hide if causing issues on small screens */
+    }
+}
